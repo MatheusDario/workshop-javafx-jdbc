@@ -102,14 +102,13 @@ public class SellerListController implements Initializable, DataChangeListener {
     }
 
     private void createDialogForm(Seller obj, String absoluteName, Stage parentStage) {
-        /*
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource(absoluteName));
             Pane pane = loader.load();
 
             SellerFormController controller = loader.getController();
             controller.setSeller(obj);
-            controller.setSellerService(new Seller()Service());
+            controller.setSellerService(new SellerService());
             controller.subscribeDataChangeListener(this);
             controller.updateFormData();
 
@@ -123,8 +122,6 @@ public class SellerListController implements Initializable, DataChangeListener {
         } catch (IOException e) {
             Alerts.showAlert("IO Exception", "Error loading view", e.getMessage(), Alert.AlertType.ERROR);
         }
-
-         */
     }
 
     @Override
